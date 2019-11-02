@@ -1,0 +1,134 @@
+#register_content{
+    height: 95%;
+  }
+
+.register {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    // min-height: calc(100vh - 200px);
+    height: 100%;
+    h2 {
+        text-align: center;
+        font-size: 35px;
+    }
+}
+
+.register__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    // min-height: 700px;
+    height: 70%;
+    // width: 400px;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.register__container--form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register__container--form label{
+    font-size: 14px;
+}
+
+.register__container--remember-me {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.register__container a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.register__container a:hover {
+    text-decoration: underline;
+}
+
+
+.input {
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    font-family:  'Muli', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+    color: white;
+}
+
+.input:focus {
+    border-bottom: 2px solid rgb(118, 189, 255);
+    transition: 0.4s;
+    left: 0;
+  }
+
+::placeholder {
+    color: white;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 90ms;
+}
+
+@media only screen and (max-width: 600px) {
+    .register__container {
+      padding: 0;
+      width: 100% !important;
+    }
+  }
+
+  
+@media only screen and (max-width: 1500px) {
+    .register__container {
+      padding: 60px 68px 40px;
+      width: 17% !important;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .register__container {
+      padding: 60px 68px 40px;
+      width: 20% !important;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+  }

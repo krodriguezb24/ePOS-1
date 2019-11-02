@@ -1,0 +1,57 @@
+@import '../variables';
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+}
+
+.footer__object {
+    height: 100%;
+    width: 100%;
+    border:none;
+}
+
+.footer_body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: $lightBlue;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+}
+
+.footer_content{
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    color: white;
+
+    a {
+        color: white;
+        cursor: pointer;
+        padding-left: 30px;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+.footer__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__infoDev {
+    text-align: right;
+    padding-right: 30px;
+    font-size: 0.9 em;
+    color: rgb(230, 230, 230);
+
+}

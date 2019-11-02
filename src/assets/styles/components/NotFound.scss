@@ -1,0 +1,25 @@
+@import "../variables";
+
+.main404 {
+    background: linear-gradient($darkBlue, $blue, $lightBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 130px);
+
+    h2 {
+    font-size: 100px;
+    color: white;
+    margin: 0;
+    animation: latidos 1.3s infinite;
+    }
+
+    p {
+        font-size: 30px;
+        color: white;
+        text-align: center;
+    }
+
+}
