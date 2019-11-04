@@ -4,18 +4,16 @@ import TopButtons from '../components/Home/TopButtons';
 import Products from '../components/Home/Products';
 import ProductItem from '../components/Home/ProductItem';
 import Cart from '../components/Home/Cart';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faBars, faSignOutAlt, faHome, faShoppingBasket, faAddressBook, faNewspaper, faChartLine, faCogs } from '@fortawesome/free-solid-svg-icons'
 import '../assets/styles/App.scss';
-
-library.add(faBars, faSignOutAlt, faHome, faShoppingBasket, faAddressBook, faNewspaper, faChartLine, faCogs);
 
 
 const Home = () => {
     return (
     <>
-    <div className="inner_content">
+    <div className="content">
     <Menu />
+    <div className="inner_content">
+    <div>
     <TopButtons />
     <Products>
         <ProductItem />
@@ -24,7 +22,9 @@ const Home = () => {
         <ProductItem />
         <ProductItem />
     </Products>
+    </div>
     <Cart />
+    </div>
     </div>
     </>
 );

@@ -21,7 +21,8 @@
   }
 
     .menu_body {
-    width: 97%;
+    width: 8%;
+    background: linear-gradient($blue, $darkBlue);
     flex-direction: column;
     justify-content: space-around;
     margin: 0;
@@ -30,7 +31,7 @@
     transition: display 1000ms ease-in;
 
     .menu_short_item{
-        width: 85%;
+        width: 80%;
         background-color: rgba(255, 255, 255, 0.5);
         margin-bottom:.8em;
         display: flex;

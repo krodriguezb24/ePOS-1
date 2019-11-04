@@ -1,3 +1,41 @@
+@import '../../variables';
+
+.row {
+    margin: 10px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .column {
+    float: left;
+    width: 33%;
+    margin-bottom: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  // SCROLLBAR
+  /* width */
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $lightBlue; 
+  }
+
+
 .cart__object{
     overflow: inherit;
 }
