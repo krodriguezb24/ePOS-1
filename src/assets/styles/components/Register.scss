@@ -1,15 +1,18 @@
+@import '../variables';
+
 #register_content{
     height: 95%;
   }
 
 .register {
     font-family: 'Nunito', sans-serif;
+    background: linear-gradient($blue, $darkBlue);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 0px 30px;
-    // min-height: calc(100vh - 200px);
+    min-height: calc(100vh - 200px);
     height: 100%;
     h2 {
         text-align: center;

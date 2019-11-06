@@ -21,10 +21,12 @@
   }
 
     .menu_body {
-    width: 8%;
+    width: 80px;
+    display: flex;
     background: linear-gradient($blue, $darkBlue);
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
+    // justify-content: space-around;
     margin: 0;
     flex-wrap: wrap;
     overflow-y: hidden;
@@ -45,7 +47,7 @@
     }  
     
     .menu_short_item:hover{
-        background-color: $darkBlue;
+        background-color: transparent;
         color: white;
         border-block-color: $blue;
     }
