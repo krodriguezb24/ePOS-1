@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Menu from '../components/Menu';
 import TopButtons from '../components/Home/TopButtons';
 import Products from '../components/Home/Products';
@@ -7,22 +8,18 @@ import Cart from '../components/Home/Cart';
 import '../assets/styles/App.scss';
 
 
-const Home = () => {
+const Home = (props) => {
+    const { products } = props
     return (
     <>
     <div className="content">
     <Menu />
     <div className="inner_content">
-    <div>
-    <TopButtons />
     <Products>
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
+    {products.map(product => 
+    <ProductItem key={product.id} {...product}/>
+    )}
     </Products>
-    </div>
     <Cart />
     </div>
     </div>
@@ -30,4 +27,10 @@ const Home = () => {
 );
     };
 
-export default Home;
+    const mapStateToProps = state => {
+        return {
+            products: state.products
+        }
+    }
+
+export default connect(mapStateToProps, null)(Home);

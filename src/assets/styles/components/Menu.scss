@@ -21,7 +21,7 @@
   }
 
     .menu_body {
-    width: 80px;
+    width: 85px;
     display: flex;
     background: linear-gradient($blue, $darkBlue);
     flex-direction: column;
@@ -48,7 +48,7 @@
     
     .menu_short_item:hover{
         background-color: transparent;
-        color: $blue;
+        color: white;
         border-block-color: $blue;
     }
 }

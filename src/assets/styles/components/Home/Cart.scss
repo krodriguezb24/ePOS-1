@@ -2,7 +2,7 @@
 
 .cart__items {
     background-color: rgba(255, 255, 255, 0.5);
-    width: 100%;
+    width: 47%;
     margin-left: 1em;
     border: 1px solid white;
     border-radius: 10px;
@@ -79,7 +79,7 @@
 
     .cart__items_total{
         margin:1em;
-        display:flex;
+        display:block;
         
         .cart__items_total-label{
             width: 70%;
@@ -87,6 +87,18 @@
 
             h3{
                 margin: 0;
+                font-size: 1.6em;
+            }
+        }
+
+        .cart__items_total-label_IVA {
+            width: 70%;
+            text-align:right;
+
+            h3{
+                margin: 0;
+                color: rgb(59, 59, 59);
+                font-size: 0.8em;
             }
         }
 

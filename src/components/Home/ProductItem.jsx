@@ -1,23 +1,32 @@
 import React from "react";
+import { connect } from 'react-redux';
+import { addToCart } from '../../actions';
 import '../../assets/styles/components/Home/ProductItem.scss';
-import product_default from '../../assets/static/product_default.png';
 
-const ProductItem = () => {
+const ProductItem = (props) => {
+  const { title, image, price, units, category } = props;
+  const handleAddToCart = () => {
+    props.addToCart({
+      props
+    })
+  }
+
   return (
+    <div className="column">
     <div className="cart__product_item">
       <div className="cart__product_item-title">
-        <h3>Nombre del Producto</h3>
+        <h3>{title}</h3>
       </div>
       <div className="cart__product_up">
         <div className="cart__product__img">
           <img
             className="cart__product-img"
-            src={product_default}
-            alt="product_image"
+            src={image}
+            alt={title}
           />
         </div>
         <div className="cart__product__btn">
-          <button className="button_add button_add_green">
+          <button className="button_add button_add_green" onClick={handleAddToCart}>
             <i className="fa fa-plus" aria-hidden="true"></i>
           </button>
           <button className="button_zoom button_zoom_blue">
@@ -26,15 +35,20 @@ const ProductItem = () => {
         </div>
       </div>
       <div className="cart__product_down">
-        <b>Precio unitario:</b>
+        <b>{`Precio unitario: $${price}`}</b>
         <br />
-        <b>Cantidad en Inventario:</b>
+        <b>{`Cantidad en Inventario: ${units}`}</b>
         <br />
-        <b>Categoría:</b>
+        <b>{`Categoría: ${category}`}</b>
         <br />
       </div>
+    </div>
     </div>
   );
 };
 
-export default ProductItem;
+const mapDispatchToProps = {
+  addToCart,
+}
+
+export default connect(null, mapDispatchToProps)(ProductItem);
