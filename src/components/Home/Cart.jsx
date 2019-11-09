@@ -15,14 +15,14 @@ const Cart = (props) => {
         const reducer = (accumulator, currentValue) =>
           accumulator + currentValue.props.price;
         const addition = cart.reduce(reducer, 0);
-        return addition;
+        return addition.toFixed(2);
       };
 
       const handleIVA = () => {
         const reducer = (accumulator, currentValue) =>
         accumulator + (currentValue.props.price*0.16);
       const iva = cart.reduce(reducer, 0);
-      return iva;
+      return iva.toFixed(2);
       }
 
     return(
