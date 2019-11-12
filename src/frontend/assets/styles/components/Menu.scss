@@ -1,0 +1,66 @@
+@import "../variables";
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: scale(0);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+    .menu_body {
+    width: 85px;
+    display: flex;
+    background: linear-gradient($blue, $darkBlue);
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+    transition: display 1000ms ease-in;
+
+    .menu_short_item{
+        width: 80%;
+        background-color: rgba(255, 255, 255, 0.5);
+        margin-bottom:.8em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:35% 0 35% 0;
+        border-radius: 50%;
+        border: 1px solid white;
+        color: $darkBlue;
+        
+    }  
+    
+    .menu_short_item:hover{
+        background-color: transparent;
+        color: white;
+        border-block-color: $blue;
+    }
+}
+
+.hide {
+    display: none !important;
+    transition: display 3s ease;
+    &.out{
+        animation: fade-out 5s;
+    }
+}
+
+.show > div{
+    display: flex !important;
+    animation: fade-in 3s;
+}
