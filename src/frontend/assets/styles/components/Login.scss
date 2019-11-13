@@ -1,0 +1,149 @@
+@import '../variables';
+
+.flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  #login_content{
+    height: 95%;
+  }
+  
+  .login {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient($blue, $darkBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    height: 100%;
+    h2 {
+        text-align: center;
+        font-size: 35px;
+    }
+  }
+  
+  .login__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    height: 70%;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  
+  .login__container--form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login__container--form label {
+    font-size: 14px;
+  }
+  
+  .login__container--remember-me {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .login__container--remember-me a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .login__container--remember-me a:hover {
+    text-decoration: underline;
+  }
+  
+  .login__container--socialmedia > div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+  }
+  
+  .login__container--socialmedia img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .login__container--register {
+    font-size: 14px;
+    a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+  
+  .login__container--register a:hover {
+    text-decoration: underline;
+  }
+  
+  .input {
+    background-color: transparent;
+    color: white;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    font-family: "Muli", sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+  }
+  
+  .input:focus {
+    border-bottom: 2px solid rgb(118, 189, 255);
+    transition: 0.4s;
+    left: 0;
+  }
+  
+  ::placeholder {
+    color: white;
+  }
+  
+  
+  
+  @media only screen and (max-width: 600px) {
+    .login__container {
+      padding: 0;
+      width: 100% !important;
+    }
+  }
+  
+  @media only screen and (max-width: 1500px) {
+    .login__container {
+      padding: 60px 68px 40px;
+      width: 17% !important;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .login__container {
+      padding: 60px 68px 40px;
+      width: 20% !important;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+  }
+  

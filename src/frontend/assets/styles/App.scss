@@ -1,0 +1,137 @@
+body {
+    margin: 0px;
+    background-color: $darkBlue;
+    font-family: $theme-font;
+}
+
+.iframe_content_body{
+    height: 100%;
+    margin: 0;
+    font-family: $theme-font;
+  }
+
+.content {
+    display: flex;
+}
+
+.inner_content {
+    background: linear-gradient($blue, $darkBlue);
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    padding: 0px .5em;
+    min-height: calc(100vh - 130px);
+
+    div.menu{
+        flex: .5;
+        flex-basis: 1;
+        display:flex;
+
+        .menu__object {
+            width: 100%;
+            margin: 0;
+            border:none;
+        }
+    }
+
+    .main_content{
+        flex: 10;
+        flex-basis: 4;
+        display:flex;
+
+        .main_content__object{
+            width: 100%;
+            margin: 0;
+            border:none;
+        }
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+   
+    .header_content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+
+        .header_content__menu{
+            flex:1;
+        }
+    
+        .header_content__logo{
+            flex: 9;
+        }
+    
+        .header_content__link{
+            flex: 10;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1500px) {
+
+    .header_content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+
+        .header_content__menu{
+            flex:.9;
+        }
+    
+        .header_content__logo{
+            flex: 9;
+        }
+    
+        .header_content__link{
+            flex: 10;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .header_content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+
+        .header_content__menu{
+            flex: 1.08;
+        }
+    
+        .header_content__logo{
+            flex: 8;
+        }
+    
+        .header_content__link{
+            flex: 10;
+        }
+    }  
+}
+
+
+@media only screen and (max-width: 800px) {
+    .footer__links {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+      }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer__infoDev {
+        width: 70px;
+        font-size: 0.7em;
+        
+    }
+}
